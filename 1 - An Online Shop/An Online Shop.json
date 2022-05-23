@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 10:37 AM",
+    "DateLastModified": "May 23, 2022, 10:45 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -73,6 +73,14 @@
         {
           "AttributeName": "GSI1SK",
           "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI2PK",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "GSI2SK",
+          "AttributeType": "S"
         }
       ],
       "GlobalSecondaryIndexes": [
@@ -85,6 +93,22 @@
             },
             "SortKey": {
               "AttributeName": "GSI1SK",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI2",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "GSI2PK",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "GSI2SK",
               "AttributeType": "S"
             }
           },
@@ -305,6 +329,12 @@
           },
           "GSI1SK": {
             "S": "metadata"
+          },
+          "GSI2PK": {
+            "S": "w#w1"
+          },
+          "GSI2SK": {
+            "S": "sh#2022-05-25T16:41:00"
           }
         }
       ],
