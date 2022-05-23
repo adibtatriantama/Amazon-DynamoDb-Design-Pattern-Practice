@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 09:42 AM",
+    "DateLastModified": "May 23, 2022, 09:51 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -84,8 +84,12 @@
           },
           "Detail": {
             "M": {
-              "description": "product",
-              "weight": "1 kg"
+              "description": {
+                "S": "product"
+              },
+              "weight": {
+                "S": "1 kg"
+              }
             }
           },
           "Price": {
@@ -107,8 +111,12 @@
           },
           "Address": {
             "M": {
-              "country": "Indonesia",
-              "city": "Yogyakarta"
+              "country": {
+                "S": "Indonesia"
+              },
+              "city": {
+                "S": "Yogyakarta"
+              }
             }
           }
         },
