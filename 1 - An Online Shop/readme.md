@@ -37,5 +37,4 @@ Always start from the data access patterns of the application when designing the
 | 12. Get shipment detail for a given shipmentId |GSI1|PK=shipmentId and SK="metadata"|-|PK="sh#sh1 and SK="metadata"
 | 13. Get all shipments for a given warehouseId |GSI2|PK=warehouseId and SK=begins_with "sh#"|-|PK="w#w1" and SK=begins_with "sh#"
 | 14. Get inventory of all products for a given warehouseId | GSI1 | PK=warehouseId and SK=begins_with "p#" |-| PK="w#w1" and SK=begins_with "p#"
-| 15. Get all invoices for a given customerId for a given date range |
-| 16. Get all products ordered by a given customerId for a given date range  |
+| 15. Get all invoices for a given customerId for a given date range | GSI2 |PK=customerId and SK=begins_with "i#"|-|PK="customer@mail.com" and SK=begins_with "i#"
