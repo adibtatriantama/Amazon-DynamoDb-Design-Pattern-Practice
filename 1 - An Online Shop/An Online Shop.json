@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 08:50 AM",
+    "DateLastModified": "May 23, 2022, 08:56 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -21,6 +21,39 @@
           "AttributeType": "S"
         }
       },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "EntityType",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Email",
+          "AttributeType": "S"
+        }
+      ],
+      "TableData": [
+        {
+          "PK": {
+            "S": "c#customer@mail.com"
+          },
+          "SK": {
+            "S": "metadata"
+          },
+          "EntityType": {
+            "S": "customer"
+          },
+          "Name": {
+            "S": "Customer Name"
+          },
+          "Email": {
+            "S": "customer@mail.com"
+          }
+        }
+      ],
       "DataAccess": {
         "MySql": {}
       },
