@@ -39,3 +39,14 @@ Always start from the data access patterns of the application when designing the
 | 14. Get inventory of all products for a given warehouseId | GSI1 | PK=warehouseId and SK=begins_with "p#" |-| PK="w#w1" and SK=begins_with "p#"
 | 15. Get all invoices for a given customerId for a given date range | GSI2 |PK=customerId and SK=begins_with "i#"|-|PK="customer@mail.com" and SK=begins_with "i#"
 | 16. Get all products ordered by a given customerId for a given date range  | GSI1 |PK=customerId and SK=between "p#start_date" and "p#end_date"|-|PK="customer@mail.com" and SK=between "p#2022-05-25T16:00:00" and "p#2022-05-30T16:00:00"
+
+## Visualization
+
+### Table
+<img src="resource/OnlineShop.png" width="100%" height="-1" style="border:1px solid black"/>
+
+### GSI1
+<img src="resource/GSI_OnlineShop_GSI1.png" width="100%" height="-1" style="border:1px solid black"/>
+
+### GSI2
+<img src="resource/GSI_OnlineShop_GSI2.png" width="100%" height="-1" style="border:1px solid black"/>
