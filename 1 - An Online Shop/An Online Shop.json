@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 10:13 AM",
+    "DateLastModified": "May 23, 2022, 10:18 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -56,6 +56,14 @@
         },
         {
           "AttributeName": "Amount",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Type",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "WarehouseId",
           "AttributeType": "S"
         }
       ],
@@ -191,6 +199,36 @@
           },
           "Amount": {
             "S": "200"
+          }
+        },
+        {
+          "PK": {
+            "S": "o#o1"
+          },
+          "SK": {
+            "S": "sh#1"
+          },
+          "EntityType": {
+            "S": "shipment"
+          },
+          "Address": {
+            "M": {
+              "country": {
+                "S": "Indonesia"
+              },
+              "city": {
+                "S": "Yogyakarta"
+              }
+            }
+          },
+          "Date": {
+            "S": "2022-05-27T17:00:00"
+          },
+          "Type": {
+            "S": "Express"
+          },
+          "WarehouseId": {
+            "S": "w#w1"
           }
         }
       ],

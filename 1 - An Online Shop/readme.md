@@ -30,7 +30,7 @@ Always start from the data access patterns of the application when designing the
 | 5. Get order for a given orderId |Table|PK=orderId and SK="metadata"|-|PK="o#o1" and SK="metadata"
 | 6. Get all products for a given orderId |Table|PK=orderId and SK=begins_with "p#"|-|PK="o#o1" and SK=begins_with "p#"
 | 7. Get invoice for a given orderId |Table|PK=orderId and SK=begins_with "i#"|-|PK="o#o1" and SK=begins_with "i#"
-| 8. Get all shipments for a given orderId |
+| 8. Get all shipments for a given orderId |Table|PK=orderId and SK=begin_with "sh#|-|PK="o#o1" and SK=begins_with "sh#"
 | 9. Get all orders for a given productId for a given date range |
 | 10. Get invoice for a given invoiceId |
 | 11. Get all payments for a given invoiceId |
