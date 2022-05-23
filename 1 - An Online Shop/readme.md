@@ -28,7 +28,7 @@ Always start from the data access patterns of the application when designing the
 | 3. Get warehouse for a given warehouseId |Table|PK=warehouseId and SK="metadata"|-|PK="w#w1" and SK="metadata"
 | 4. Get a product inventory for all warehouses by a productId |Table|PK=productId and SK=begins_with "w#"|-|PK="p#p1" and SK=begins_with "w#"
 | 5. Get order for a given orderId |Table|PK=orderId and SK="metadata"|-|PK="o#1" and SK="metadata"
-| 6. Get all products for a given orderId |
+| 6. Get all products for a given orderId |Table|PK=orderId and SK=begins_with "p#"|-|PK="o#1" and SK=begins_with "p#"
 | 7. Get invoice for a given orderId |
 | 8. Get all shipments for a given orderId |
 | 9. Get all orders for a given productId for a given date range |
