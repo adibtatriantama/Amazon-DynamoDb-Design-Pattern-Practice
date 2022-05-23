@@ -126,16 +126,13 @@
         },
         {
           "PK": {
-            "S": "w#w1"
+            "S": "p#p1"
           },
           "SK": {
-            "S": "p#p1"
+            "S": "w#w1"
           },
           "EntityType": {
             "S": "warehouseItem"
-          },
-          "Name": {
-            "S": "product 1"
           },
           "Quantity": {
             "N": "10"
