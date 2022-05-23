@@ -25,7 +25,7 @@ Always start from the data access patterns of the application when designing the
 | :---        | :---         | :---     | :---    |:---|
 | 1. Get customer for a given customerId|Table|PK=customerId and SK="metadata"|-|PK="c#customer@mail.com" and SK="metadata"|
 | 2. Get product for a given productId   |Table|PK=productId and SK="metadata"|-|PK="p#p1" and SK="metadata"|
-| 3. Get warehouse for a given warehouseId |
+| 3. Get warehouse for a given warehouseId |Table|PK=warehouseId and SK="metadata"|-|PK="w#w1" and SK="metadata"
 | 4. Get a product inventory for all warehouses by a productId |
 | 5. Get order for a given orderId |
 | 6. Get all products for a given orderId |
