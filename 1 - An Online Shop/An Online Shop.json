@@ -1,0 +1,30 @@
+{
+  "ModelName": "An Online Shop",
+  "ModelMetadata": {
+    "Author": "Adibta Triantama",
+    "DateCreated": "May 23, 2022, 08:46 AM",
+    "DateLastModified": "May 23, 2022, 08:50 AM",
+    "Description": "",
+    "AWSService": "Amazon DynamoDB",
+    "Version": "3.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "OnlineShop",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "PK",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "SK",
+          "AttributeType": "S"
+        }
+      },
+      "DataAccess": {
+        "MySql": {}
+      },
+      "BillingMode": "PAY_PER_REQUEST"
+    }
+  ]
+}
