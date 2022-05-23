@@ -23,19 +23,19 @@ Always start from the data access patterns of the application when designing the
 
 | Access Patterns      |
 | :---        | 
-| Get customer for a given customerId      | 
-| Get product for a given productId   | 
-| Get warehouse for a given warehouseId |
-| Get a product inventory for all warehouses by a productId |
-| Get order for a given orderId |
-| Get all products for a given orderId |
-| Get invoice for a given orderId |
-| Get all shipments for a given orderId |
-| Get all orders for a given productId for a given date range |
-| Get invoice for a given invoiceId |
-| Get all payments for a given invoiceId |
-| Get shipment detail for a given shipmentId |
-| Get all shipments for a given warehouseId |
-| Get inventory of all products for a given warehouseId |
-| Get all invoices for a given customerId for a given date range |
-| Get all products ordered by a given customerId for a given date range  |
+| 1. Get customer for a given customerId      | 
+| 2. Get product for a given productId   | 
+| 3. Get warehouse for a given warehouseId |
+| 4. Get a product inventory for all warehouses by a productId |
+| 5. Get order for a given orderId |
+| 6. Get all products for a given orderId |
+| 7. Get invoice for a given orderId |
+| 8. Get all shipments for a given orderId |
+| 9. Get all orders for a given productId for a given date range |
+| 10. Get invoice for a given invoiceId |
+| 11. Get all payments for a given invoiceId |
+| 12. Get shipment detail for a given shipmentId |
+| 13. Get all shipments for a given warehouseId |
+| 14. Get inventory of all products for a given warehouseId |
+| 15. Get all invoices for a given customerId for a given date range |
+| 16. Get all products ordered by a given customerId for a given date range  |
