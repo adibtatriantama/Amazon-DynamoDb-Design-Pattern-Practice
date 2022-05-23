@@ -45,6 +45,10 @@
         {
           "AttributeName": "Address",
           "AttributeType": "M"
+        },
+        {
+          "AttributeName": "Quantity",
+          "AttributeType": "N"
         }
       ],
       "TableData": [
@@ -106,6 +110,23 @@
               "country": "Indonesia",
               "city": "Yogyakarta"
             }
+          }
+        },
+        {
+          "PK": {
+            "S": "w#w1"
+          },
+          "SK": {
+            "S": "p#p1"
+          },
+          "EntityType": {
+            "S": "warehouseItem"
+          },
+          "Name": {
+            "S": "product 1"
+          },
+          "Quantity": {
+            "N": "10"
           }
         }
       ],
