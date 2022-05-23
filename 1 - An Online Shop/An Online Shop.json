@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 10:31 AM",
+    "DateLastModified": "May 23, 2022, 10:34 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -225,6 +225,38 @@
           },
           "EntityType": {
             "S": "invoice"
+          },
+          "Detail": {
+            "M": {
+              "L": [
+                {
+                  "M": {
+                    "Type": {
+                      "S": "GiftCard"
+                    },
+                    "Amount": {
+                      "N": "100"
+                    },
+                    "Data": {
+                      "S": "GiftCard data here..."
+                    }
+                  }
+                },
+                {
+                  "M": {
+                    "Type": {
+                      "S": "MasterCard"
+                    },
+                    "Amount": {
+                      "N": "300"
+                    },
+                    "Data": {
+                      "S": "Payment data here..."
+                    }
+                  }
+                }
+              ]
+            }
           },
           "Date": {
             "S": "2022-05-25T17:00:00"

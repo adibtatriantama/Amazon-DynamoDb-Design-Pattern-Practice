@@ -33,7 +33,7 @@ Always start from the data access patterns of the application when designing the
 | 8. Get all shipments for a given orderId |Table|PK=orderId and SK=begin_with "sh#|-|PK="o#o1" and SK=begins_with "sh#"
 | 9. Get all orders for a given productId for a given date range |GSI1|PK=productId and SK=between "o#start_date" and "o#end_date" |-|PK="p#p1 and SK=between "o#2022-05-25T16:00:00" and "o#2022-05-30T16:00:00"
 | 10. Get invoice for a given invoiceId |GSI1|PK=invoiceId and SK="metadata"|-|PK="i#i1" and S="metadata"
-| 11. Get all payments for a given invoiceId |
+| 11. Get all payments for a given invoiceId |GSI1|PK=invoiceId and SK="metadata"|-|PK="i#i1" and S="metadata"
 | 12. Get shipment detail for a given shipmentId |
 | 13. Get all shipments for a given warehouseId |
 | 14. Get inventory of all products for a given warehouseId |
