@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 10:45 AM",
+    "DateLastModified": "May 23, 2022, 10:52 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -215,6 +215,12 @@
           },
           "Date": {
             "S": "2022-05-25T16:41:00"
+          },
+          "GSI1PK": {
+            "S": "p#p1"
+          },
+          "GSI1SK": {
+            "S": "o#2022-05-25T16:41:00"
           }
         },
         {
@@ -232,12 +238,6 @@
           },
           "Quantity": {
             "N": "2"
-          },
-          "GSI1PK": {
-            "S": "p#p1"
-          },
-          "GSI1SK": {
-            "S": "o#2022-05-25T16:41:00"
           }
         },
         {
