@@ -198,7 +198,7 @@
             "S": "o#o1"
           },
           "SK": {
-            "S": "p#1"
+            "S": "p#p1"
           },
           "EntityType": {
             "S": "orderItem"
@@ -221,7 +221,7 @@
             "S": "o#o1"
           },
           "SK": {
-            "S": "i#1"
+            "S": "i#i1"
           },
           "EntityType": {
             "S": "invoice"
@@ -276,7 +276,7 @@
             "S": "o#o1"
           },
           "SK": {
-            "S": "sh#1"
+            "S": "sh#sh1"
           },
           "EntityType": {
             "S": "shipment"
