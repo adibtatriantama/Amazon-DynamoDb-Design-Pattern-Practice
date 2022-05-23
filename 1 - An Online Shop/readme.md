@@ -24,7 +24,7 @@ Always start from the data access patterns of the application when designing the
 | Access Patterns |Table/GSI/LSI|Key Condition|Filter Expression| Example|
 | :---        | :---         | :---     | :---    |:---|
 | 1. Get customer for a given customerId|Table|PK=customerId and SK="metadata"|-|PK="c#customer@mail.com" and SK="metadata"|
-| 2. Get product for a given productId   | 
+| 2. Get product for a given productId   |Table|PK=productId and SK="metadata"|-|PK="p#p1" and SK="metadata"|
 | 3. Get warehouse for a given warehouseId |
 | 4. Get a product inventory for all warehouses by a productId |
 | 5. Get order for a given orderId |

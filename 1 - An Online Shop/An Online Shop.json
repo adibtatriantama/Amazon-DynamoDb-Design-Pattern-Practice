@@ -3,7 +3,7 @@
   "ModelMetadata": {
     "Author": "Adibta Triantama",
     "DateCreated": "May 23, 2022, 08:46 AM",
-    "DateLastModified": "May 23, 2022, 08:56 AM",
+    "DateLastModified": "May 23, 2022, 09:05 AM",
     "Description": "",
     "AWSService": "Amazon DynamoDB",
     "Version": "3.0"
@@ -33,6 +33,14 @@
         {
           "AttributeName": "Email",
           "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Detail",
+          "AttributeType": "M"
+        },
+        {
+          "AttributeName": "Price",
+          "AttributeType": "S"
         }
       ],
       "TableData": [
@@ -51,6 +59,29 @@
           },
           "Email": {
             "S": "customer@mail.com"
+          }
+        },
+        {
+          "PK": {
+            "S": "p#p1"
+          },
+          "SK": {
+            "S": "metadata"
+          },
+          "EntityType": {
+            "S": "product"
+          },
+          "Name": {
+            "S": "product 1"
+          },
+          "Detail": {
+            "M": {
+              "description": "product",
+              "weight": "1 kg"
+            }
+          },
+          "Price": {
+            "S": "100"
           }
         }
       ],
